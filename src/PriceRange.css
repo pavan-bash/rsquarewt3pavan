@@ -1,0 +1,168 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  content: ".";
+}
+body {
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  background-color: #d1d4d3;
+  margin: 30px 100px;
+}
+p {
+  margin-top: 0;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  color: #333333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sliderContainer {
+  position: absolute;
+  margin-left: 50px;
+  padding-left: 30px;
+}
+
+.sliderValue {
+  float: right;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: right;
+  color: #333333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modSlider {
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  height: 4px;
+  outline: none;
+  margin-bottom: 27px;
+  border: 3px solid #ffffff;
+  background-color: #cccccc;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modSlider:after {
+  visibility: hidden;
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  content: ".";
+}
+.modSlider:hover {
+  background-color: #bfbfbf;
+}
+.modSlider .-segment {
+  position: relative;
+  float: left;
+  display: block;
+  height: 4px;
+  min-width: 20px;
+}
+.modSlider .-segmentIndex {
+  position: absolute;
+  top: 12px;
+  right: -15px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #777;
+  content: attr(data-segment);
+}
+.modSlider .-segment:first-child .-segmentStartIndex {
+  position: absolute;
+  top: 12px;
+  left: -15px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #777;
+  content: attr(data-start-index);
+}
+
+.modSlider .-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #8fc60f;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
+}
+.modSlider .-control {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  cursor: pointer;
+  -webkit-transition: left 0.2s;
+  -moz-transition: left 0.2s;
+  -o-transition: left 0.2s;
+  transition: left 0.2s;
+}
+.modSlider .-control:before {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  border: 8px solid #8fc60f;
+  border-radius: 8px;
+  content: "";
+}
+.modSlider .-control:hover:before {
+  border-color: #77a50c;
+}
+.modSlider:focus .-control:before {
+  border-color: #77a50c;
+}
+.modSlider.x-noAnimation .-indicator,
+.modSlider.x-noAnimation .-control {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.modSlider.x-altStyle {
+  border: 0 none;
+  background-color: #ffffff;
+}
+.modSlider.x-altStyle .-indicator {
+  background-color: #a9afad;
+}
+.modSlider.x-altStyle .-control:before {
+  left: -4px;
+  border: 2px solid #777777;
+  border-radius: 2px;
+  width: 4px;
+  height: 12px;
+  background-color: #777777;
+}
+.modSlider.x-toggle {
+  border-width: 10px;
+  border-radius: 8px;
+  height: 0px;
+}
+.modSlider.x-toggle .-control {
+  top: 0;
+}

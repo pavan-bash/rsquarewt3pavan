@@ -1,0 +1,54 @@
+.appMiddle {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 3%;
+}
+
+.appMiddle_header {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 150%;
+}
+
+.appMiddle_header span {
+  font-weight: 700;
+}
+
+.appMiddle_contentElement {
+  padding: 1rem 0rem;
+}
+
+.appMiddle_contentElement_img {
+  height: 80%;
+  margin-bottom: 0.4rem;
+}
+
+.appMiddle_contentElement_btn {
+  margin-top: 0.4rem;
+}
+
+.appMiddle_contentElement_btn a {
+  width: 12rem;
+  border-radius: 1rem !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 700 !important;
+  border: 1px solid #40e0d0;
+  text-decoration: none;
+  color: rgba(51, 203, 245);
+}
+
+.appMiddle_contentElement_btn a:hover {
+  color: white !important;
+}
+
+.money {
+  color: rgba(51, 203, 245);
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.appMiddle {
+  padding: 2rem 5rem;
+}
